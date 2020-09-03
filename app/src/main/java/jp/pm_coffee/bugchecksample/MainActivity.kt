@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 			
 			try {
 				AssetsMapper.instance.map.forEach {
-					Log.d("button onClick", "key = ${it.key}, value = ${it.value}") //Crashes on this line only if you installed the APK manually
+					Log.d("button onClick", "key = ${it.key}, value = ${it.value}") //Crashes on this line only if CoreLibraryDesugaring is enabled and the APK is installed manually
 				}
 			} catch (e: Exception){
 				Log.e("button onClick", "error", e)
