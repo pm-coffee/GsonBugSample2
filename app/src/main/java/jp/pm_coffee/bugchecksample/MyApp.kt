@@ -10,8 +10,5 @@ class MyApp: Application() {
 	override fun onCreate() {
 		super.onCreate()
 		instance = this
-
-		//init
-		AssetsMapper.instance
 	}
 }

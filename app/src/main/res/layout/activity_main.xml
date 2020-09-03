@@ -41,53 +41,23 @@
 					app:layout_constraintHorizontal_bias="0.0"
 					app:layout_constraintStart_toStartOf="parent"
 					app:layout_constraintTop_toTopOf="parent" />
-
+				
+				
 				<TextView
-					android:id="@+id/original_label_textView"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="16dp"
-					android:text="original"
-					app:layout_constraintStart_toStartOf="@+id/id_3_original_result_textView"
-					app:layout_constraintTop_toBottomOf="@+id/get_id_3_button" />
-
-				<TextView
-					android:id="@+id/casted_label_textView"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="16dp"
-					android:text="casted"
-					app:layout_constraintStart_toStartOf="@+id/id_3_casted_result_textView"
-					app:layout_constraintTop_toBottomOf="@+id/get_id_3_button" />
-
-				<TextView
-					android:id="@+id/id_3_original_result_textView"
+					android:id="@+id/id_3_result_textView"
 					android:layout_width="0dp"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="16dp"
-					android:layout_marginBottom="16dp"
-					android:background="#ccc"
-					android:text="result"
-					app:layout_constraintBottom_toBottomOf="parent"
-					app:layout_constraintEnd_toStartOf="@+id/id_3_casted_result_textView"
-					app:layout_constraintHorizontal_bias="0.5"
-					app:layout_constraintStart_toStartOf="parent"
-					app:layout_constraintTop_toBottomOf="@+id/original_label_textView" />
-
-				<TextView
-					android:id="@+id/id_3_casted_result_textView"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="24dp"
-					android:layout_marginEnd="16dp"
+					android:layout_marginTop="16dp"
 					android:layout_marginBottom="16dp"
 					android:background="#ccc"
 					android:text="result"
 					app:layout_constraintBottom_toBottomOf="parent"
 					app:layout_constraintEnd_toEndOf="parent"
 					app:layout_constraintHorizontal_bias="0.5"
-					app:layout_constraintStart_toEndOf="@+id/id_3_original_result_textView"
-					app:layout_constraintTop_toBottomOf="@+id/original_label_textView" />
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/get_id_3_button" />
+
 
 
 			</androidx.constraintlayout.widget.ConstraintLayout>
@@ -120,34 +90,9 @@
 					app:layout_constraintHorizontal_bias="0.0"
 					app:layout_constraintStart_toStartOf="parent"
 					app:layout_constraintTop_toTopOf="parent" />
-
+				
 				<TextView
-					android:id="@+id/all_data_original_label_textView"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="16dp"
-					android:layout_marginEnd="16dp"
-					android:text="original"
-					app:layout_constraintEnd_toEndOf="parent"
-					app:layout_constraintHorizontal_bias="0.0"
-					app:layout_constraintStart_toStartOf="@+id/all_data_original_textView"
-					app:layout_constraintTop_toBottomOf="@+id/all_data_label_textView" />
-
-				<TextView
-					android:id="@+id/all_data_casted_label_textView"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="16dp"
-					android:layout_marginEnd="16dp"
-					android:text="casted"
-					app:layout_constraintEnd_toEndOf="parent"
-					app:layout_constraintHorizontal_bias="0.0"
-					app:layout_constraintStart_toStartOf="@+id/all_data_casted_textView"
-					app:layout_constraintTop_toBottomOf="@+id/all_data_label_textView" />
-
-
-				<TextView
-					android:id="@+id/all_data_original_textView"
+					android:id="@+id/all_data_textView"
 					android:layout_width="0dp"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="16dp"
@@ -156,28 +101,12 @@
 					android:background="#ccc"
 					android:text=""
 					app:layout_constraintBottom_toBottomOf="parent"
-					app:layout_constraintEnd_toStartOf="@+id/all_data_casted_textView"
-					app:layout_constraintHorizontal_bias="0.5"
-					app:layout_constraintStart_toStartOf="parent"
-					app:layout_constraintTop_toBottomOf="@+id/all_data_original_label_textView"
-					tools:text="all data" />
-
-				<TextView
-					android:id="@+id/all_data_casted_textView"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="8dp"
-					android:layout_marginEnd="16dp"
-					android:layout_marginBottom="16dp"
-					android:background="#ccc"
-					android:text=""
-					app:layout_constraintBottom_toBottomOf="parent"
 					app:layout_constraintEnd_toEndOf="parent"
 					app:layout_constraintHorizontal_bias="0.5"
-					app:layout_constraintStart_toEndOf="@+id/all_data_original_textView"
-					app:layout_constraintTop_toBottomOf="@+id/all_data_original_label_textView"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/all_data_label_textView"
 					tools:text="all data" />
-
+				
 
 			</androidx.constraintlayout.widget.ConstraintLayout>
 

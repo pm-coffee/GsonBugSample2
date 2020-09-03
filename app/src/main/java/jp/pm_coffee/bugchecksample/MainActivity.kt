@@ -18,28 +18,24 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 
-		binding.allDataOriginalTextView.text = "${AssetsMapper.instance.originalMap}"
-		binding.allDataCastedTextView.text = "${AssetsMapper.instance.castedMap}"
-
-
+		binding.allDataTextView.text = "${AssetsMapper.instance.map}"
 
 		binding.getId3Button.setOnClickListener {
 			val targetId = 3
 			
-			val originalMapData = AssetsMapper.instance.originalMap[targetId]
-			val originalMapDataContains = AssetsMapper.instance.originalMap.contains(targetId)// <----- This result is odd.
-			Log.d("button onClick", "originalMapDataContains = $originalMapDataContains   originalMapData = $originalMapData")
+			val data = AssetsMapper.instance.map[targetId]
+			val contains = AssetsMapper.instance.map.containsKey(targetId)
+			Log.d("button onClick", "contains = $contains   data = $data")
 
-			binding.id3OriginalResultTextView.text = "contains = $originalMapDataContains\n$originalMapData"
-
-
-			val castedMapData = AssetsMapper.instance.castedMap[targetId]
-			val castedMapDataContains = AssetsMapper.instance.castedMap.contains(targetId)
-			Log.d("button onClick", "castedMapDataContains = $castedMapDataContains   castedMapData = $castedMapData")
-
-			binding.id3CastedResultTextView.text = "contains = $castedMapDataContains\n$castedMapData"
+			binding.id3ResultTextView.text = "contains = $contains\n$data"
 			
-			
+			try {
+				AssetsMapper.instance.map.forEach {
+					Log.d("button onClick", "key = ${it.key}, value = ${it.value}") //Crashes on this line only if you installed the APK manually
+				}
+			} catch (e: Exception){
+				Log.e("button onClick", "error", e)
+			}
 		}
 
 	}
